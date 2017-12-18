@@ -18,22 +18,11 @@ module.exports = (env) => {
       exclude: /node_modules/
     }, {
       test: /\.s?css$/,
-      use: CSSExtract.extract({
-        use: [
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
-          }
-        ]
-      })
+      use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader'
+      ]
     },
      {test: /\.(jpg|png|svg)$/, loader: 'url-loader'}]
   },plugins: [
