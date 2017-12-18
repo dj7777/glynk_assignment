@@ -22,12 +22,9 @@ export default class AddOption extends React.Component {
         return (
             <div>
                 {this.state.error && <p>{this.state.error}</p>}
-                <form id="new-message-form" onSubmit={this.handleAddOption}
-                >
-                    {/* <textarea row="4" type="text" name="option"  />
-             */}
-                    <input className="form-control message-input" type="text" name="option" placeholder="Type a message" />
-                </form>
+                <form id="new-message-form" onSubmit={this.handleAddOption}>
+                    <input className="message-input" type="text" name="option" placeholder="Type a message" />
+                </form> 
             </div>
         );
     }
