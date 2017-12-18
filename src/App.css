@@ -146,11 +146,10 @@ html{
 .New-message-container * {
   display: inline-block;
   padding: 4px;
-  align-content: center;
 }
 .message-input{
- width: 900px;
-  height: 50px;
+ width: 20%;
+  max-height: 80%;
   font-size: 18px;
   border-radius:5px;
   background-color:#ffffff;-webkit-flex:1 1 auto;flex:1 1 auto;min-width:0;
@@ -252,3 +251,11 @@ transform: translate(788.195px, -1px);
 .block-compose .input-container
 {border-radius:5px;width:inherit;background-color:#ffffff;-webkit-flex:1 1 auto;flex:1 1 auto;min-width:0;
   border-color:#fff;border-width:1px;border-style:solid;box-sizing:border-box;padding-right:16px;} */
+
+  @media (max-width: 800px) {
+    .icon-message-container{
+      height:20px;
+      width: 20px;
+    }    
+  }
+  
